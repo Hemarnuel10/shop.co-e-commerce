@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+</head>
+
+<body>
+    <main>
+        <h2>YOUR CART</h2>
+
+        <div>
+            <!-- Cart Items -->
+            <ul>
+                <li>
+                    <img src="" alt="Gradient Graphic T-shirt">
+                    <div>
+                        <div>
+                            <h3>Gradient Graphic T-shirt</h3>
+                            <p>Size: Large</p>
+                            <p>Color: White</p>
+                        </div>
+                        <button aria-label="Remove item">
+                            <i class="bi bi-trash3-fill"></i>
+                        </button>
+                    </div>
+                    <p>$145</p>
+                </li>
+            </ul>
+
+            <!-- Order Summary -->
+            <aside>
+                <h3>Order Summary</h3>
+
+                <dl>
+                    <div>
+                        <dt>Subtotal</dt>
+                        <dd>$565</dd>
+                    </div>
+                    <div>
+                        <dt>Discount (-20%)</dt>
+                        <dd>-$133</dd>
+                    </div>
+                    <div>
+                        <dt>Delivery Fee</dt>
+                        <dd>$15</dd>
+                    </div>
+                </dl>
+
+                <hr>
+
+                <div>
+                    <p>Total</p>
+                    <p>$467</p>
+                </div>
+
+                <!-- Coupon -->
+                <form>
+                    <label for="coupon">Promo Code</label>
+                    <input type="text" name="coupon" id="coupon" placeholder="Enter promo code">
+                    <button type="submit">Apply</button>
+                </form>
+
+                <button>
+                    Go to Checkout <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                </button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
