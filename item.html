@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hema-Store</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <main>
 
-        <!-- Product Detail Section -->
+    <header>
+        <nav>
+            <p>SHOP.CO<p>
+            <ul>
+                <li>Shop</li>
+                <li>On sale</li>
+                <li>New Arrivals</li>
+                <li>Brands</li>
+                <li><input type="search" name="" id="search"></li>
+                <li><i class="bi bi-cart" aria-label="Cart"></i></li>
+                <li><i class="bi bi-person-circle" aria-label="Account"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="item-listing-page">
         <section>
-            <div>
-                <!-- Image Gallery -->
-                <ul>
-                    <li><img src="" alt="Product thumbnail 1"></li>
-                    <li><img src="" alt="Product thumbnail 2"></li>
-                    <li><img src="" alt="Product thumbnail 3"></li>
-                    <li><img src="" alt="Product thumbnail 4"></li>
+            <div class="item-details-section">
+                <ul class="item-image">
+                    <li>
+                        <div class="item-options">
+                            <img src="./assets/image 9.png" alt="Product thumbnail 1" class="curve-edge" height="130px">
+                            <img src="./assets/image 9.png" alt="Product thumbnail 2" class="curve-edge" height="130px">
+                            <img src="./assets/image 9.png" alt="Product thumbnail 3" class="curve-edge" height="130px">
+                        </div>
+                    </li>
+
+                    <li><img src="./assets/image 9.png" alt="Product thumbnail 4" class="curve-edge" height="410px"></li>
                 </ul>
 
-                <!-- Product Info -->
                 <div>
-                    <h2>ONE LIFE GRAPHIC T-SHIRT</h2>
+                    <h2 class="headingb">ONE LIFE GRAPHIC T-SHIRT</h2>
 
                     <div aria-label="5 out of 5 stars">
                         <i class="bi bi-star"></i>
@@ -31,20 +53,22 @@
                         <i class="bi bi-star"></i>
                     </div>
 
-                    <p>$260 <del>$300</del> <span>-40%</span></p>
+                    <p class="item-price">$260 <del class="dicounted-price">$300</del> <span class="discount-percentage">-40%</span></p>
 
-                    <p>This graphic t-shirt which is perfect for any occasion.
+                    <p class="item-description">This graphic t-shirt which is perfect for any occasion.
                         Crafted from a soft and breathable fabric, it offers
                         superior comfort and style.
                     </p>
 
                     <hr>
 
-                    <div>
+                    <div class="item-color">
                         <p>Select Colors</p>
                     </div>
 
-                    <div>
+                    <hr>
+
+                    <div class="item-size">
                         <p>Choose Size</p>
                         <div>
                             <button>Small</button>
@@ -56,22 +80,22 @@
 
                     <hr>
 
-                    <button>Add to Cart</button>
+                    <div class="add-to-cart">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
-        <!-- Reviews Section -->
         <section>
-            <!-- Tabs -->
-            <div role="tablist">
+            <div class="more-product-info" role="tablist">
                 <button role="tab">Product Details</button>
                 <button role="tab">Rating &amp; Reviews</button>
                 <button role="tab">FAQs</button>
             </div>
 
-            <!-- Reviews Header -->
-            <div>
+            <div class="review-heading">
                 <h2>All Reviews</h2>
                 <div>
                     <button>Latest</button>
@@ -79,7 +103,6 @@
                 </div>
             </div>
 
-            <!-- Review Cards -->
             <div>
                 <article>
                     <div>
@@ -93,27 +116,63 @@
                         <i class="bi bi-three-dots"></i>
                     </div>
 
-                    <h3>
-                        Sarah M.
-                        <i class="bi bi-check-circle" aria-label="Verified buyer"></i>
-                    </h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet error dolore qui. Eos accusamus vero quos cumque
-                        libero repellendus, minima perferendis atque officiis.
-                    </p>
-                    <p><time datetime="2023-08-14">Posted on August 14, 2023</time></p>
+                    <ul class="reviews-2">
+                        <li class="review-2">
+                            <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet error dolore qui. Eos accusamus vero quos cumque
+                                libero repellendus, minima perferendis atque officiis.
+                            </p>
+
+                            <p><time datetime="2023-08-14">Posted on August 14, 2023</time></p>
+                        </li>
+
+                        <li class="review-2">
+                            <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet error dolore qui. Eos accusamus vero quos cumque
+                                libero repellendus, minima perferendis atque officiis.
+                            </p>
+
+                            <p><time datetime="2023-08-14">Posted on August 14, 2023</time></p>
+                        </li>
+
+                        <li class="review-2">
+                            <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet error dolore qui. Eos accusamus vero quos cumque
+                                libero repellendus, minima perferendis atque officiis.
+                            </p>
+
+                            <p><time datetime="2023-08-14">Posted on August 14, 2023</time></p>
+                        </li>
+
+                        <li class="review-2">
+                            <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet error dolore qui. Eos accusamus vero quos cumque
+                                libero repellendus, minima perferendis atque officiis.
+                            </p>
+
+                            <p><time datetime="2023-08-14">Posted on August 14, 2023</time></p>
+                        </li>
+                    </ul>
+                    
                 </article>
 
-                <button>Load More Reviews</button>
+                <div class="view-all-review-btn">
+                    <button >Load More Reviews</button>
+                </div>
+
             </div>
         </section>
 
         <!-- You Might Also Like -->
-        <section>
-            <h2>YOU MIGHT ALSO LIKE</h2>
-            <ul>
-                <li>
-                    <img src="" alt="T-shirt with Tape Details">
+        <section class="might-also-like">
+            <h2 class="heading-2">YOU MIGHT ALSO LIKE</h2>
+            <ul class="items">
+                <li class="item">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="260px">
                     <p>T-shirt with Tape Details</p>
                     <div aria-label="5 out of 5 stars">
                         <i class="bi bi-star"></i>
@@ -124,9 +183,133 @@
                     </div>
                     <p>$120</p>
                 </li>
-            </ul>
+
+                 <li class="item">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="260px">
+                    <p>T-shirt with Tape Details</p>
+                    <div aria-label="5 out of 5 stars">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p>$120</p>
+                </li>
+
+                 <li class="item">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="260px">
+                    <p>T-shirt with Tape Details</p>
+                    <div aria-label="5 out of 5 stars">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p>$120</p>
+                </li>
+
+                 <li class="item">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="260px">
+                    <p>T-shirt with Tape Details</p>
+                    <div aria-label="5 out of 5 stars">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p>$120</p>
+                </li>
+            </ul>            
         </section>
 
+        
+
+
+        <div class="newsletter-section">
+            <section class="section-6">
+                <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe to Newsletter</button>
+                </form>
+            </section>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info-section">
+                <div class="footer-section">
+                    <h2>SHOP.CO</h2>
+                    <p class="footer-text">
+                        We have clothes that suit your style and which you're proud to wear, from women to men.
+                    </p>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Works</a></li>
+                        <li><a href="">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="">Customer Support</a></li>
+                        <li><a href="">Delivery Details</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Manage Delivery</a></li>
+                        <li><a href="">Orders</a></li>
+                        <li><a href="">Payments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="">Free eBooks</a></li>
+                        <li><a href="">Development Tutorial</a></li>
+                        <li><a href="">How to - Blog</a></li>
+                        <li><a href="">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright-section">
+            <p>Shop.co <i class="bi bi-c-circle"></i> 2000-2026, All Rights Reserved</p>
+            <div>
+                <img src="./assets/visa-classic-svgrepo-com.svg" alt="Visa" height="35px">
+                <img src="./assets/mastercard-svgrepo-com.svg" alt="Mastercard" height="35px">
+                <img src="./assets/amazon-pay-svgrepo-com.svg" alt="Amazon Pay" height="35px">
+                <img src="./assets/paypal-svgrepo-com.svg" alt="PayPal" height="35px">
+                <img src="./assets/apple-pay-svgrepo-com.svg" alt="Apple Pay" height="35px">
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

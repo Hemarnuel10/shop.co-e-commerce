@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hema-Store</title>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./index.js" defer></script>
@@ -14,10 +15,10 @@
         <nav>
             <p>SHOP.CO<p>
             <ul>
-                <li>Shop</li>
-                <li>On sale</li>
-                <li>New Arrivals</li>
-                <li>Brands</li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">On sale</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Brands</a></li>
                 <li><input type="search" name="" id="search"></li>
                 <li><i class="bi bi-cart" aria-label="Cart"></i></li>
                 <li><i class="bi bi-person-circle" aria-label="Account"></i></li>
@@ -68,25 +69,25 @@
             <h2 class="heading-2">NEW ARRIVALS</h2>
             <ul class="items">
                 <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
@@ -102,25 +103,25 @@
             <h2 class="heading-2">TOP SELLING</h2>
             <ul class="items">
                 <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
 
                  <li class="item">
-                    <img src="./assets/Vector.png" alt="T-shirt with Tape Details" height="300px">
+                    <img src="./assets/image 9.png" alt="T-shirt with Tape Details" class="curve-edge" height="250px">
                     <p>T-shirt with Tape Details</p>
                     <p>$120</p>
                 </li>
@@ -134,35 +135,56 @@
         <section class="section-4">
             <h2 class="heading-2">BROWSE BY DRESS STYLE</h2>
             <div class="dress-style-grid">
-                <div>
+                <div class="dress-type-wrapper translate-up">
+                    <h3 class="dress-type">Casual</h3>
                     <img src="./assets/image 11.png" alt="" height="270px">
                 </div>
 
-                <div>
+                <div class="dress-type-wrapper translate-up">
+                    <h3 class="dress-type">Formal</h3>
                     <img src="./assets/image 12.png" alt="" height="270px">
                 </div>
 
-                <div>
-                    <img src="./assets/image 13.png" alt="" height="270px">
+                <div class="dress-type-wrapper translate-up">
+                    <h3 class="dress-type">Party</h3>
+                    <img src="./assets/image 13.png" alt=""  height="270px">
                 </div>
 
-                <div>
-                    <img src="./assets/image 14.png" alt="" height="270x">
+                <div class="dress-type-wrapper translate-up">
+                    <h3 class="dress-type">Gym</h3>
+                    <img src="./assets/image 14.png" alt="" height="270px">
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="section-5">
+            <div class="flex-in-between heading-3">
                 <h2>OUR HAPPY CUSTOMERS</h2>
                 <div>
-                    <button aria-label="Previous"><i class="bi bi-arrow-left-short"></i></button>
-                    <button aria-label="Next"><i class="bi bi-arrow-right-short"></i></button>
+                    <button aria-label="Previous"><i class="bi bi-arrow-left-short fs-10" aria-hidden="true"></i></button>
+                    <button aria-label="Next"><i class="bi bi-arrow-right-short fs-10" aria-hidden="true"></i></button>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <h3>Sarah M. <i class="bi bi-check-circle" aria-label="Verified"></i></h3>
+
+            <ul class="reviews">
+                <li class="review">
+                    <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet error dolore qui. Eos accusamus vero quos cumque
+                        libero repellendus, minima perferendis atque officiis.
+                    </p>
+                </li>
+
+                <li class="review">
+                    <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet error dolore qui. Eos accusamus vero quos cumque
+                        libero repellendus, minima perferendis atque officiis.
+                    </p>
+                </li>
+
+                <li class="review">
+                    <h3>Sarah M. <i class="bi bi-check-circle-fill" aria-label="Verified"></i></h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Amet error dolore qui. Eos accusamus vero quos cumque
                         libero repellendus, minima perferendis atque officiis.
@@ -171,69 +193,72 @@
             </ul>
         </section>
 
-        <!-- Newsletter -->
-        <section>
-            <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
-            <form action="">
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <button type="submit">Subscribe to Newsletter</button>
-            </form>
-        </section>
+        <div class="newsletter-section">
+            <section class="section-6">
+                <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe to Newsletter</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
         <div class="footer">
-            <div>
-                <h2>SHOP.CO</h2>
-                <p class="footer-text">
-                    We have clothes that suit your style and which you're proud to wear, from women to men.
-                </p>
-                <div class="socials">
-                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <div class="footer-info-section">
+                <div class="footer-section">
+                    <h2>SHOP.CO</h2>
+                    <p class="footer-text">
+                        We have clothes that suit your style and which you're proud to wear, from women to men.
+                    </p>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <h3>COMPANY</h3>
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">Career</a></li>
-                </ul>
-            </div>
+                <div class="footer-section">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Works</a></li>
+                        <li><a href="">Career</a></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h3>HELP</h3>
-                <ul>
-                    <li><a href="">Customer Support</a></li>
-                    <li><a href="">Delivery Details</a></li>
-                    <li><a href="">Terms and Conditions</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-            </div>
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="">Customer Support</a></li>
+                        <li><a href="">Delivery Details</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h3>FAQ</h3>
-                <ul>
-                    <li><a href="">Account</a></li>
-                    <li><a href="">Manage Delivery</a></li>
-                    <li><a href="">Orders</a></li>
-                    <li><a href="">Payments</a></li>
-                </ul>
-            </div>
+                <div class="footer-section">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Manage Delivery</a></li>
+                        <li><a href="">Orders</a></li>
+                        <li><a href="">Payments</a></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h3>RESOURCES</h3>
-                <ul>
-                    <li><a href="">Free eBooks</a></li>
-                    <li><a href="">Development Tutorial</a></li>
-                    <li><a href="">How to - Blog</a></li>
-                    <li><a href="">Youtube Playlist</a></li>
-                </ul>
+                <div class="footer-section">
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="">Free eBooks</a></li>
+                        <li><a href="">Development Tutorial</a></li>
+                        <li><a href="">How to - Blog</a></li>
+                        <li><a href="">Youtube Playlist</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -242,11 +267,11 @@
         <div class="copyright-section">
             <p>Shop.co <i class="bi bi-c-circle"></i> 2000-2026, All Rights Reserved</p>
             <div>
-                <img src="./assets/visa-classic-svgrepo-com.svg" alt="Visa" height="70px">
-                <img src="./assets/mastercard-svgrepo-com.svg" alt="Mastercard" height="70px">
-                <img src="./assets/amazon-pay-svgrepo-com.svg" alt="Amazon Pay" height="70px">
-                <img src="./assets/paypal-svgrepo-com.svg" alt="PayPal" height="70px">
-                <img src="./assets/apple-pay-svgrepo-com.svg" alt="Apple Pay" height="70px">
+                <img src="./assets/visa-classic-svgrepo-com.svg" alt="Visa" height="35px">
+                <img src="./assets/mastercard-svgrepo-com.svg" alt="Mastercard" height="35px">
+                <img src="./assets/amazon-pay-svgrepo-com.svg" alt="Amazon Pay" height="35px">
+                <img src="./assets/paypal-svgrepo-com.svg" alt="PayPal" height="35px">
+                <img src="./assets/apple-pay-svgrepo-com.svg" alt="Apple Pay" height="35px">
             </div>
         </div>
     </footer>
