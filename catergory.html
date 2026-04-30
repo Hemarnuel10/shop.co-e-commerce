@@ -24,77 +24,156 @@
                 <li><i class="bi bi-person-circle" aria-label="Account"></i></li>
             </ul>
         </nav>
+            <hr>
     </header>
 
-    <main class="cateegory-page">
+    <main class="category-page">
+        <aside>
+            <div class="cate-aside">
+                <div class="filter-header">
+                    <h2>Filters</h2>
+                    <i class="bi bi-sliders" aria-hidden="true"></i>
+                </div>
 
-        <!-- Filter Sidebar -->
-        <aside class="cate-aside">
-            <div>
-                <h2>Filter</h2>
-            </div>
-            <hr>
+                <hr>
 
-            <!-- Categories -->
-            <ul>
-                <li><a href="#">T-shirt <i class="bi bi-arrow-right-short"></i></a></li>
-                <li><a href="#">Shorts <i class="bi bi-arrow-right-short"></i></a></li>
-                <li><a href="#">Shirts <i class="bi bi-arrow-right-short"></i></a></li>
-                <li><a href="#">Hoodie <i class="bi bi-arrow-right-short"></i></a></li>
-                <li><a href="#">Jeans <i class="bi bi-arrow-right-short"></i></a></li>
-            </ul>
-            <hr>
-
-            <!-- Price -->
-            <div>
-                <h3>Price <i class="bi bi-arrow-up-short"></i></h3>
-            </div>
-            <hr>
-
-            <!-- Colours -->
-            <div>
-                <h3>Colours <i class="bi bi-arrow-up-short"></i></h3>
-            </div>
-            <hr>
-
-            <!-- Size -->
-            <div>
-                <h3>Size <i class="bi bi-arrow-up-short"></i></h3>
-            </div>
-            <hr>
-
-            <!-- Dress Style -->
-            <div>
-                <h3>Dress Style <i class="bi bi-arrow-up-short"></i></h3>
-                <ul>
-                    <li><a href="#">Casual <i class="bi bi-arrow-right-short"></i></a></li>
-                    <li><a href="#">Formal <i class="bi bi-arrow-right-short"></i></a></li>
-                    <li><a href="#">Party <i class="bi bi-arrow-right-short"></i></a></li>
-                    <li><a href="#">Gym <i class="bi bi-arrow-right-short"></i></a></li>
+                <ul class="filter-categories">
+                    <li>
+                        <a href="#">T-shirts</a>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <a href="#">Shorts</a>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <a href="#">Shirts</a>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <a href="#">Hoodie</a>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <a href="#">Jeans</a>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                    </li>
                 </ul>
-            </div>
-            <hr>
+                <hr>
+                <div class="filter-section">
+                    <div class="filter-section-header">
+                        <h3>Price</h3>
+                        <button aria-label="Toggle price filter">
+                            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="price-range">
+                        <div class="price-slider-track">
+                            <input type="range" min="0" max="1000000" value="50" id="price-min">
+                            <input type="range" min="0" max="1000000" value="200" id="price-max">
+                        </div>
+                        <div class="price-labels">
+                            <span id="min-label">$50</span>
+                            <span id="max-label">$200</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
 
-            <button>Apply Filter</button>
+                <div class="filter-section">
+                    <div class="filter-section-header">
+                        <h3>Colours</h3>
+                        <button aria-label="Toggle colours filter">
+                            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="color-options">
+                        <button class="color-btn" style="background-color: #00C12B;" aria-label="Green"></button>
+                        <button class="color-btn" style="background-color: #F50606;" aria-label="Red"></button>
+                        <button class="color-btn" style="background-color: #F5DD06;" aria-label="Yellow"></button>
+                        <button class="color-btn" style="background-color: #F57906;" aria-label="Orange"></button>
+                        <button class="color-btn" style="background-color: #06CAF5;" aria-label="Cyan"></button>
+                        <button class="color-btn active" style="background-color: #063AF5;" aria-label="Blue"></button>
+                        <button class="color-btn" style="background-color: #7D06F5;" aria-label="Purple"></button>
+                        <button class="color-btn" style="background-color: #F506A4;" aria-label="Pink"></button>
+                        <button class="color-btn" style="background-color: #FFFFFF; border: 1px solid #ccc;" aria-label="White"></button>
+                        <button class="color-btn" style="background-color: #000000;" aria-label="Black"></button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="filter-section">
+                    <div class="filter-section-header">
+                        <h3>Size</h3>
+                        <button aria-label="Toggle size filter">
+                            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="size-options">
+                        <button class="size-btn">XX-Small</button>
+                        <button class="size-btn">X-Small</button>
+                        <button class="size-btn">Small</button>
+                        <button class="size-btn">Medium</button>
+                        <button class="size-btn active">Large</button>
+                        <button class="size-btn">X-Large</button>
+                        <button class="size-btn">XX-Large</button>
+                        <button class="size-btn">3X-Large</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="filter-section">
+                    <div class="filter-section-header">
+                        <h3>Dress Style</h3>
+                        <button aria-label="Toggle dress style filter">
+                            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <ul class="filter-categories">
+                        <li>
+                            <a href="#">Casual</a>
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <a href="#">Formal</a>
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <a href="#">Party</a>
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <a href="#">Gym</a>
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="apply-filter-btn">Apply Filter</button>
+            </div>
         </aside>
 
-        <!-- Product Section -->
-        <section>
-            <div class="cate-section">
+        <section class="cate-section">
+            <div class="cate-header">
                 <h2>Casual</h2>
                 <div class="cate-details">
                     <p>Showing 1-10 Products</p>
-                    <div>
-                        Sort by: <button>Most Popular</button>
+                    <div class="sort-by">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort" name="sort">
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
                     </div>
                 </div>
             </div>
 
-            <!-- Product Card -->
             <article>
                 <ul class="items-2">
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <div aria-label="5 out of 5 stars">
                             <i class="bi bi-star"></i>
@@ -107,7 +186,7 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <div aria-label="5 out of 5 stars">
                             <i class="bi bi-star"></i>
@@ -120,7 +199,7 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <i class="bi bi-star"></i>
                         <i class="bi bi-star"></i>
@@ -131,20 +210,7 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
-                        <p>T-shirt with Tape Details</p>
-                        <div aria-label="5 out of 5 stars">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <p>$120</p>
-                    </li>
-
-                    <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <div aria-label="5 out of 5 stars">
                             <i class="bi bi-star"></i>
@@ -157,18 +223,7 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
-                        <p>T-shirt with Tape Details</p>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <p>$120</p>
-                    </li>
-
-                    <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <div aria-label="5 out of 5 stars">
                             <i class="bi bi-star"></i>
@@ -181,7 +236,18 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" max>
+                        <p>T-shirt with Tape Details</p>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>$120</p>
+                    </li>
+
+                    <li class="item">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" max>
                         <p>T-shirt with Tape Details</p>
                         <div aria-label="5 out of 5 stars">
                             <i class="bi bi-star"></i>
@@ -194,7 +260,20 @@
                     </li>
 
                     <li class="item">
-                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details" height="260px">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
+                        <p>T-shirt with Tape Details</p>
+                        <div aria-label="5 out of 5 stars">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p>$120</p>
+                    </li>
+
+                    <li class="item">
+                        <img src="./assets/image 9.png" alt="T-shirt with Tape Details">
                         <p>T-shirt with Tape Details</p>
                         <i class="bi bi-star"></i>
                         <i class="bi bi-star"></i>
