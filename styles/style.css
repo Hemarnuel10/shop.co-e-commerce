@@ -35,7 +35,7 @@ nav p{
     font-weight: bold;
 }
 
-nav{
+.link-container{
     padding: 20px 0px 0px 0px;
     display: flex;
     font-size: 1rem;
@@ -43,9 +43,23 @@ nav{
     align-items: center;
 }
 
+nav p{
+    margin-bottom: 0;
+    margin-right: auto;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
 nav ul{
     list-style: none;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 20px;
 }
@@ -54,7 +68,7 @@ nav a{
     color: black;
 }
 
-nav input{
+nav ul li input{
     width: 32vw;
     font-size: 1.2rem;
     height: 50px;
@@ -86,8 +100,8 @@ nav input:focus{
 }
 
 h1{
-    font-size: 5rem;
-    width: 60vw;
+    font-size: 4rem;
+    width: 50vw;
     font-weight: 1000;
     line-height: 1;
     margin-bottom: 20px;
@@ -95,9 +109,9 @@ h1{
     padding-top: 70px;
 }
 
-h1,h2{
+/* h1,h2{
       font-family: 'Satoshi', sans-serif;
-}
+} */
 
 .intro-p{
     width: 600px;
@@ -123,13 +137,14 @@ h1,h2{
 
 .hero-stats {
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 0px 40px;
     padding-top: 24px;
     padding-bottom: 70px;
 }
 
 .hero-stats p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
@@ -165,6 +180,7 @@ h1,h2{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 40px;
+    align-items: center;
 }
 
 /* .translate-up:hover{
@@ -393,9 +409,10 @@ footer{
     background-color: rgba(233, 230, 230, 0.712);
 }
 
-.footer-info-section{
-    display: flex;
-    gap: 80px;
+.footer-info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
     padding-bottom: 60px;
 }
 
@@ -423,12 +440,15 @@ footer{
     font-size: 1.5rem;
 }
 
-.copyright-section{
+.copyright-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     padding: 10px 0px;
 }
+
 .copyright-section img{
     margin-right: 18px;
 }
@@ -442,18 +462,25 @@ footer{
 
 .item-details-section{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
 .item-image{
     display: flex;
-    gap: 20px;
+    gap: 0px;
 }
 
 .item-options{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.item-options{
+    height: 30%;
+    width: 30% ;
 }
 
 .heading-2b{
@@ -775,12 +802,6 @@ input[type="range"]::-ms-thumb {
     flex-wrap: wrap;
 }
 
-.cart-section h2{
-    font-size: 40px;
-    font-weight: 900;
-    padding: 0px 0px 10px 0px;
-}
-
 .sort-by select{
     border: none;
     width: 120px;
@@ -800,9 +821,16 @@ input[type="range"]::-ms-thumb {
 
 }
 
+.cart-section h2{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 0px 0px 10px 0px;
+}
 
 .orders-info{
-    gap: 20px;
+    gap: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .orders{
@@ -819,15 +847,45 @@ input[type="range"]::-ms-thumb {
     padding: 20px;
  }
 
- .order-item-info{
+ .order-item-info, .order-price-div{
     display: flex;
     justify-content: space-between;
+    gap: 12rem;
  }
 
- .order-summary h3{
-    font-size: 28px;
+.order-item-info h3, .order-summary h3{
+    font-size: 1.3rem;
     font-weight: 600px;
- }
+    margin-bottom: 0.5rem;
+}
+
+.order-item-info p{
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+}
+
+.remove-item{
+    background-color: transparent;
+    color: red;
+    border: none;
+}
+
+.order-number{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
+.order-price-div{
+        margin-top: 7px;
+}
+
+.order-price-div p, #total-price{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
 
  .order-fee{
     display: flex;
@@ -840,6 +898,10 @@ input[type="range"]::-ms-thumb {
     width: 200px;
   }
 
+    .order-fee dd{
+        font-weight: 700
+    }
+
  .promo-code-form input{
     background-color:rgba(218, 218, 218, 0.562);
     padding: 20px;
@@ -851,8 +913,8 @@ input[type="range"]::-ms-thumb {
  }
 
  .promo-code-form button{
-    padding: 15px 40px;
-    border-radius: 20px;
+    padding: 12px 36px;
+    border-radius: 24px;
     border: none;
     background-color: black;
     color: white;
@@ -861,37 +923,90 @@ input[type="range"]::-ms-thumb {
  .order-checkout{
     width: 100%;
     margin-top: 20px;
-    padding: 15px 0px;
+    padding: 16px 0px;
     border-radius: 30px;
     border: none;
     background-color: black;
     color: white;
  }
 
-
-
-/* Large desktop — 4 columns */
 @media (min-width: 1200px) {
     .items-2 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* Tablet — 3 columns */
 @media (max-width: 1024px) {
-    .items-2 {
-        grid-template-columns: repeat(3, 1fr);
+    .items-2{
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    /* .item:nth-of-type(4){
+        display: none;
+    } */
 }
 
-/* Small tablet — 2 columns */
+
 @media (max-width: 768px) {
     .items-2 {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    nav ul{
+        list-style: none;
+        display: none; 
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 999;
+        width: 150px;
+        font-size: 1rem;
+        top: 0px;
+        position: fixed;
+        background-color: white;
+        left: 0px;
+        height: 100vh;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    nav ul li{
+        width: 100%;
+        padding: 5px 0px  5px 10px;
+    }
+
+    nav ul li:hover{
+        text-decoration: none;
+        background-color: gray;
+    }
+
+     nav ul li a:hover{
+        text-decoration: none;
+     }
+
+    .link-container{
+        flex-direction: column;
+    }    
+
+    h1{
+    font-size: 2rem;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 1000;;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+    padding-top: 30px;
+}
+    /* .item:nth-of-type(4){
+        display: block;
+    } */
+
+.cate-aside{
+    display: none;
+}
 }
 
-/* Mobile — 2 small columns */
 @media (max-width: 480px) {
     .items-2 {
         grid-template-columns: repeat(2, 1fr);
@@ -899,7 +1014,6 @@ input[type="range"]::-ms-thumb {
     }
 }
 
-/* Very small mobile — 1 column */
 @media (max-width: 320px) {
     .items-2 {
         grid-template-columns: 1fr;
